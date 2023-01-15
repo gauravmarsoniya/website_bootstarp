@@ -1,0 +1,27 @@
+.ourServices {
+  &::before {
+    position: absolute;
+    animation: shape-service-1 1s;
+    background-image: url(../../../../assets/bg2.png);
+    height: 604px;
+    width: 949.83px;
+    background-size: contain;
+    content: '';
+    background-repeat: no-repeat;
+    z-index: -1;
+    right: -23%;
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-image: url(../../../../assets/bg1.png);
+    height: 483px;
+    width: 180px;
+    background-size: cover;
+    content: '';
+    z-index: -1;
+  }
+}
