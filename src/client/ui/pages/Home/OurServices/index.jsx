@@ -1,4 +1,5 @@
-import Container from 'react-bootstrap/esm/Container';
+import cn from 'classnames';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from '../../../components/Card';
@@ -56,23 +57,25 @@ const OurServices = () => {
     },
   ];
   return (
-    <Container className={styles.ourServices}>
-      <Row>
-        <Col>
-          <div className='title-area text-center mb-5'>
-            <h6 className={'text-primary mb-3'}>Our Services</h6>
-            <h1>Service We Provide</h1>
-          </div>
-        </Col>
-      </Row>
-      <Row className='g-4 mt--5'>
-        {services.map((service) => (
-          <Col key={service.id} xl={3} lg={4} md={4} sm={6}>
-            <Card {...service} />
+    <div className={cn(styles.serviceArea, 'pt-5 pb-5 mb-5')}>
+      <Container className={styles.ourServices}>
+        <Row>
+          <Col>
+            <div className='title-area text-center mb-5'>
+              <h6 className={'text-primary mb-3'}>Our Services</h6>
+              <h1>Service We Provide</h1>
+            </div>
           </Col>
-        ))}
-      </Row>
-    </Container>
+        </Row>
+        <Row className='g-4 mt--5'>
+          {services.map((service) => (
+            <Col key={service.id} xl={3} lg={4} md={4} sm={6}>
+              <Card {...service} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </div>
   );
 };
 

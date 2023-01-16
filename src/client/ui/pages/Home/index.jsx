@@ -1,10 +1,12 @@
-import Container from 'react-bootstrap/esm/Container';
+import Container from 'react-bootstrap/Container';
+import Banner from './Banner';
 import OurServices from './OurServices';
 const Home = () => {
   return (
-    <Container className={'mt-5'}>
+    <>
+      <Banner />
       <OurServices />
-    </Container>
+    </>
   );
 };
 
