@@ -1,24 +1,32 @@
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom';
-const MyNavbar = () => {
+
+const TopNav = () => {
   return (
-    <Navbar bg='primary' variant='dark' expand='lg' sticky='top'>
-      <Container>
+    <Navbar
+      collapseOnSelect
+      bg='white'
+      variant='light'
+      expand='lg'
+      sticky='top'
+      className={'border-bottom'}
+    >
+      <Container className={'my-2'}>
         <Navbar.Brand>Website</Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
-            <Nav.Item>
+        <Navbar.Toggle aria-controls='esponsive-navbar-nav' />
+        <Navbar.Collapse id='responsive-navbar-nav'>
+          <Nav className={'me-auto'}></Nav>
+          <Nav>
+            <Nav.Item className={'mx-2'}>
               <Nav.Link href='/'>Home</Nav.Link>
             </Nav.Item>
 
-            <NavDropdown title='Solutions' id='basic-nav-dropdown'>
+            <NavDropdown className={'mx-2'} title='Solutions'>
               <NavDropdown.Item href='/solutions/ui-ux-services'>
                 UI/UX Services
-                <Container style={{ width: '400px' }}>Hello</Container>
               </NavDropdown.Item>
               <NavDropdown.Item href='/solutions/development'>
                 Development
@@ -35,7 +43,7 @@ const MyNavbar = () => {
                 Cloud solution
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title='Resources' id='basic-nav-dropdown'>
+            <NavDropdown className={'mx-2'} title='Resources'>
               <NavDropdown.Item href='#action/3.1'>
                 Partnerships
               </NavDropdown.Item>
@@ -44,14 +52,18 @@ const MyNavbar = () => {
               <NavDropdown.Item href='#action/3.3'>FAQ</NavDropdown.Item>
               <NavDropdown.Item href='#action/3.3'>Careers</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Item>
+
+            <Nav.Item className={'mx-2'}>
               <Nav.Link href='/technologies'>Technologies</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item className={'mx-2'}>
               <Nav.Link href='/blog'>Blog</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href='/contactus'>Contact us</Nav.Link>
+            <Nav.Item className={'mx-2'}>
+              <Nav.Link href='/contactus'>Contact Us</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className={'mx-3'}>
+              <Button variant='primary'>Get Started</Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
@@ -60,4 +72,4 @@ const MyNavbar = () => {
   );
 };
 
-export default MyNavbar;
+export default TopNav;

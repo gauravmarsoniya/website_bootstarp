@@ -3,10 +3,10 @@ import Banner from './Banner';
 import OurServices from './OurServices';
 const Home = () => {
   return (
-    <>
+    <main>
       <Banner />
-      <OurServices />
-    </>
+    </main>
+    // <OurServices />
   );
 };
 

@@ -1,6 +1,6 @@
 import './index.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import Resources from './pages/Resources';
@@ -9,9 +9,7 @@ import Technologies from './pages/Technologies';
 const UI = () => {
   return (
     <Router>
-      <header>
-        <Navbar />
-      </header>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/solutions/:id' element={<Solutions />} />

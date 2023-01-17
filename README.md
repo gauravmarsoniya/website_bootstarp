@@ -68,3 +68,64 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+https://shreethemes.in/starty/index-corporate.html
+https://hostlar.themetags.com/index.html - best professional website
+
+https://finestwp.co/demos/html/fastland/home-it-services.html
+https://reactheme.com/products/html/axela/
+
+https://demos.wrappixel.com/premium-website-templates/ui-kit/wrapkit-bootstrap/package/demos/demo-industrial/index.html
+
+https://themeforest.kreativdev.com/teeno/demo/index-5.html - hero background shape
+
+https://shreethemes.in/landrick/landing/index-it-solution.html - refer
+
+http://themelooks.net/demo/vpnet/html/preview/index.html - header top hide on scroll
+
+https://html.creativegigstf.com/sinco/?storefront=envato-elements - service details page
+
+https://shreethemes.in/techwind/layouts/index-it-solution.html
+
+https://themesdesign.in/jobcy-react/layout/services.html -Good
+
+## Live Website
+
+https://www.horizoncore.com/hire-dedicated-developer-india/
+https://www.horizoncore.com/magento-development-customization/
+
+https://theninehertz.com/
+
+https://www.elsner.com/
+
+https://www.mobikasa.com/
+
+https://magnetoitsolutions.com/
+
+https://foreignerds.com/
+
+https://www.webiletechnologies.com/ **\*\***
+
+---
+
+Our Services -> We run all kind of service in form of technologies
+copy from axela
+
+Why chooes us
+
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+Font size system
+
+10 12 14 16 18 24 30 36 48 60 72 84
+
+spacing system
+
+2, 4, 8, 12, 16, 24, 32, 64, 72, 128
+
+background: rgb(184,165,232);
+background: linear-gradient(201deg, rgba(184,165,232,1) 0%, rgba(255,255,255,1) 100%);
