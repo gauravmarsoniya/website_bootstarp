@@ -10,18 +10,17 @@ const Banner = () => {
   return (
     <section className={cn(styles.banner)}>
       <Container>
-        <Carousel fade variant='dark' controls={false} indicators={false}>
+        <Carousel variant='dark' controls={false} indicators={false}>
           <Carousel.Item>
             <Row className={'justify-content-between'}>
               <Col lg={6} className={'center-block'}>
                 <div className={'mt-lg-5 mt-md-5'}>
-                  <h1>For Unique Domain Search!</h1>
+                  <h1>Magento Development</h1>
                   <p className={'lead text-muted'}>
-                    Quickly design and customize responsive mobile-first sites
-                    with Bootstrap, the world’s most popular front-end open
-                    source toolkit, featuring Sass variables and mixins,
-                    responsive grid system, extensive prebuilt components, and
-                    powerful JavaScript plugins
+                    Magento is an ecommerce website platform owned by Adobe that
+                    specializes in ecommerce websites. Magento users have access
+                    to hundreds of unique features that help them connect with
+                    their customers and sell their products.
                   </p>
                 </div>
               </Col>
@@ -36,13 +35,13 @@ const Banner = () => {
             <Row className={'justify-content-between'}>
               <Col lg={6} className={'center-block'}>
                 <div className={'mt-lg-5 mt-md-5'}>
-                  <h1>For Unique Domain Search!</h1>
+                  <h1>React js Web & Mobile App Development</h1>
                   <p className={'lead text-muted'}>
-                    Quickly design and customize responsive mobile-first sites
-                    with Bootstrap, the world’s most popular front-end open
-                    source toolkit, featuring Sass variables and mixins,
-                    responsive grid system, extensive prebuilt components, and
-                    powerful JavaScript plugins
+                    React is a free and open-source front-end JavaScript library
+                    for building user interfaces based on UI components.React
+                    can be used as a base in the development of single-page,
+                    mobile, or server-rendered applications with frameworks like
+                    Next.js
                   </p>
                 </div>
               </Col>

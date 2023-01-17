@@ -3,9 +3,11 @@ import Banner from './Banner';
 import OurServices from './OurServices';
 const Home = () => {
   return (
-    <main>
-      <Banner />
-    </main>
+    <>
+      <main>
+        <Banner />
+      </main>
+    </>
     // <OurServices />
   );
 };
