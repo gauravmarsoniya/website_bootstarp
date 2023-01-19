@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import Resources from './pages/Resources';
 import Technologies from './pages/Technologies';
+import Footer from './components/Footer';
 /* Rename classname with company name once final */
 const UI = () => {
   return (
@@ -16,6 +17,7 @@ const UI = () => {
         <Route path='/resources' element={<Resources />} />
         <Route path='/technologies' element={<Technologies />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
