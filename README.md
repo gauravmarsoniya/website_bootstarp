@@ -71,23 +71,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 https://shreethemes.in/starty/index-corporate.html
 https://hostlar.themetags.com/index.html - best professional website
-
-https://finestwp.co/demos/html/fastland/home-it-services.html
+https://shreethemes.in/landrick/landing/index-it-solution.html - refer
 https://reactheme.com/products/html/axela/
 
-https://demos.wrappixel.com/premium-website-templates/ui-kit/wrapkit-bootstrap/package/demos/demo-industrial/index.html
+https://finestwp.co/demos/html/fastland/home-it-services.html
+https://themesdesign.in/jobcy-react/layout/services.html - similar to hostlar
+
+## IT COMPANY Template
+
+https://demos.wrappixel.com/premium-website-templates/ui-kit/wrapkit-bootstrap/package/demos/demo-web-agency/index.html
 
 https://themeforest.kreativdev.com/teeno/demo/index-5.html - hero background shape
-
-https://shreethemes.in/landrick/landing/index-it-solution.html - refer
 
 http://themelooks.net/demo/vpnet/html/preview/index.html - header top hide on scroll
 
 https://html.creativegigstf.com/sinco/?storefront=envato-elements - service details page
 
 https://shreethemes.in/techwind/layouts/index-it-solution.html
-
-https://themesdesign.in/jobcy-react/layout/services.html -Good
 
 ## Live Website
 
@@ -129,3 +129,7 @@ spacing system
 
 background: rgb(184,165,232);
 background: linear-gradient(201deg, rgba(184,165,232,1) 0%, rgba(255,255,255,1) 100%);
+
+https://shreethemes.in/techwind/layouts/index-startup.html
+
+work on starup feature - like 24/7 support
