@@ -125,7 +125,7 @@ Font size system
 
 spacing system
 
-2, 4, 8, 12, 16, 24, 32, 64, 72, 128
+2, 4, 8, 12, 16, 24, 32, 48, 64, 72, 128
 
 background: rgb(184,165,232);
 background: linear-gradient(201deg, rgba(184,165,232,1) 0%, rgba(255,255,255,1) 100%);
@@ -133,3 +133,11 @@ background: linear-gradient(201deg, rgba(184,165,232,1) 0%, rgba(255,255,255,1) 
 https://shreethemes.in/techwind/layouts/index-startup.html
 
 work on starup feature - like 24/7 support
+
+Building website products, brands & expereince
+
+https://codepen.io/Rayeesac/pen/JjGEYRZ
+https://www.youtube.com/watch?v=Lxqy5bRbGBQ - mega menu code
+https://tailblocks.cc/ ready to use block
+
+https://codingyaar.com/bootstrap-mega-menu-1/ -- bootstrap mega menu
