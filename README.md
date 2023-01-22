@@ -147,9 +147,12 @@ https://preview.themeforest.net/item/vulk-multipurpose-vue-3-ssr-sass-landing-pa
 https://preview.themeforest.net/item/polo-responsive-multipurpose-html5-template/full_screen_preview/13708923?_ga=2.260996877.1052483676.1674368128-484830853.1673456687&_gac=1.15928962.1674368128.EAIaIQobChMI-rjUqsPa_AIVg5lmAh1whA8DEAAYASAAEgKLGfD_BwE
 
 -- Good
-https://preview.themeforest.net/item/spondtech-it-solutions-and-services-html5-template/full_screen_preview/43018037?_ga=2.101028609.1052483676.1674368128-484830853.1673456687&_gac=1.237710004.1674368128.EAIaIQobChMI-rjUqsPa_AIVg5lmAh1whA8DEAAYASAAEgKLGfD_BwE
 
 service details
 https://layerdrops.com/notechhtml/main-html/product-development.html
 https://layerdrops.com/notechhtml/main-html/digital-marketing.html
 http://templates.thememodern.com/engitech/it-services.html
+
+https://preview.themeforest.net/item/spondtech-it-solutions-and-services-html5-template/full_screen_preview/43018037?_ga=2.101028609.1052483676.1674368128-484830853.1673456687&_gac=1.237710004.1674368128.EAIaIQobChMI-rjUqsPa_AIVg5lmAh1whA8DEAAYASAAEgKLGfD_BwE
+
+https://www.netsolutions.com/services

@@ -1,0 +1,25 @@
+.services {
+  .header {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    background-image: url(https://www.aimsinfosoft.com/wp-content/uploads/2020/09/banners-magento-en_0-1-copy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, #000000, rgba(239, 148, 28, 0.5));
+    }
+  }
+}

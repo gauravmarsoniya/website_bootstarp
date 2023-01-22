@@ -2,7 +2,7 @@ import './index.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
-import Solutions from './pages/Solutions';
+import Services from './pages/Services';
 import Resources from './pages/Resources';
 import Technologies from './pages/Technologies';
 import Footer from './components/Footer';
@@ -13,7 +13,7 @@ const UI = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/solutions/:id' element={<Solutions />} />
+        <Route path='/solutions/:id' element={<Services />} />
         <Route path='/resources' element={<Resources />} />
         <Route path='/technologies' element={<Technologies />} />
       </Routes>
