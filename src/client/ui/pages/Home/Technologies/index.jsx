@@ -88,7 +88,7 @@ const Technologies = () => {
                   <FaMagento size={48} color={'#f46f25'} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <FaWordpress size={48} />
+                  <FaWordpress size={48} color='#00749C' />
                 </SwiperSlide>
                 <SwiperSlide>
                   <FaShopify size={48} color={'#96bf48'} />
@@ -97,20 +97,20 @@ const Technologies = () => {
                   <FaDrupal size={48} color={'#25AAE1'} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <FaReact size={48} />
+                  <FaReact size={48} color='#61DBFB' />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <FaAngular size={48} />
+                  <FaAngular size={48} color='#dd1b16' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <FaVuejs size={48} />
+                  <FaVuejs size={48} color='#42b883' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <FaHtml5 size={48} />
+                  <FaHtml5 size={48} color='#e34c26' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <FaPhp size={48} />
+                  <FaPhp size={48} color='#8993be' />
                 </SwiperSlide>
                 <SwiperSlide>
                   <FaPython size={48} />
@@ -122,17 +122,17 @@ const Technologies = () => {
                   <SiFlutter size={48} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <SiIonic size={48} />
+                  <SiIonic size={48} color='#498AFF' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <SiMongodb size={48} />
+                  <SiMongodb size={48} color='#3FA037' />
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <SiMysql size={48} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <SiPostgresql size={48} />
+                  <SiPostgresql size={48} color='#336791' />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SiFirebase size={48} />

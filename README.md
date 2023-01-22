@@ -141,3 +141,15 @@ https://www.youtube.com/watch?v=Lxqy5bRbGBQ - mega menu code
 https://tailblocks.cc/ ready to use block
 
 https://codingyaar.com/bootstrap-mega-menu-1/ -- bootstrap mega menu
+
+https://preview.themeforest.net/item/vulk-multipurpose-vue-3-ssr-sass-landing-pages-ui-kit/full_screen_preview/36586175?_ga=2.56013867.1052483676.1674368128-484830853.1673456687&_gac=1.45820816.1674368128.EAIaIQobChMI-rjUqsPa_AIVg5lmAh1whA8DEAAYASAAEgKLGfD_BwE -effect
+
+https://preview.themeforest.net/item/polo-responsive-multipurpose-html5-template/full_screen_preview/13708923?_ga=2.260996877.1052483676.1674368128-484830853.1673456687&_gac=1.15928962.1674368128.EAIaIQobChMI-rjUqsPa_AIVg5lmAh1whA8DEAAYASAAEgKLGfD_BwE
+
+-- Good
+https://preview.themeforest.net/item/spondtech-it-solutions-and-services-html5-template/full_screen_preview/43018037?_ga=2.101028609.1052483676.1674368128-484830853.1673456687&_gac=1.237710004.1674368128.EAIaIQobChMI-rjUqsPa_AIVg5lmAh1whA8DEAAYASAAEgKLGfD_BwE
+
+service details
+https://layerdrops.com/notechhtml/main-html/product-development.html
+https://layerdrops.com/notechhtml/main-html/digital-marketing.html
+http://templates.thememodern.com/engitech/it-services.html
