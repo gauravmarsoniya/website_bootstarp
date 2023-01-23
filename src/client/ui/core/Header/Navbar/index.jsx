@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Link } from 'react-router-dom';
 import cn from 'classnames';
 import menus from '@client/data/menu/index';
 //import styles from './index.module.scss';
@@ -40,17 +41,14 @@ const TopNav = () => {
                           <Col sm={6} md={4} lg={3}>
                             <h6>{submenu.key}</h6>
                             {submenu.submenus.map((subsubmenu) => (
-                              <NavDropdown.Item
-                                key={subsubmenu.key}
-                                className='px-0'
-                              >
-                                <Nav.Link
+                              <div>
+                                <Link
                                   className={'px-0'}
-                                  href='/solutions/development'
+                                  to={`/solutions/${subsubmenu.key}`}
                                 >
                                   {subsubmenu.key}
-                                </Nav.Link>
-                              </NavDropdown.Item>
+                                </Link>
+                              </div>
                             ))}
                           </Col>
                         ))}
@@ -64,7 +62,9 @@ const TopNav = () => {
                     {menu.type === 'button' ? (
                       <Button variant='primary'>Get Started</Button>
                     ) : (
-                      <Nav.Link href='/'>{menu.key}</Nav.Link>
+                      <Nav.Link href='/solutions/development'>
+                        {menu.key}
+                      </Nav.Link>
                     )}
                   </Nav.Item>
                 );

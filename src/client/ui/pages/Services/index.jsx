@@ -3,11 +3,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
-
+import { useParams } from 'react-router-dom';
 import cn from 'classnames';
 import styles from './index.module.scss';
 const Solutions = (props) => {
-  console.log('XXXX', props);
+  let { id } = useParams();
+  console.log('XXXXXXXXXXX', id);
   return (
     <div className={cn(styles.services)}>
       <section className={cn(styles.header, 'py-5')}>

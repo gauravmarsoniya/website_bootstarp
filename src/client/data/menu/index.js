@@ -11,18 +11,23 @@ export default [
         submenus: [
           {
             key: 'MAGENTO',
+            url: 'services/megento',
           },
           {
             key: 'WOOCOMMERCE',
+            url: '/services/woocommerce',
           },
           {
             key: 'SHOPIFY',
+            url: '/services/shopify',
           },
           {
             key: 'WORDPRESS',
+            url: '/services/wordpress',
           },
           {
             key: 'DRUPAL',
+            url: '/services/drupal',
           },
         ],
       },
