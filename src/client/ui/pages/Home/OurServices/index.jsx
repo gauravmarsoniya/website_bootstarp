@@ -2,7 +2,7 @@ import cn from 'classnames';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from '../../../components/Card';
+import Card from '../../../core/Card';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image';
 
@@ -74,7 +74,10 @@ const OurServices = () => {
           </Col>
         </Row>
         {services.map((service, index) => (
-          <Row className={cn(styles.service, 'justify-content-between')}>
+          <Row
+            key={index}
+            className={cn(styles.service, 'justify-content-between')}
+          >
             <Col
               xs={12}
               sm={12}
@@ -89,8 +92,8 @@ const OurServices = () => {
               <p className={'text-muted'}>{service.text}</p>
               {service.links && (
                 <Row className={'gy-3'}>
-                  {service.links.map((link) => (
-                    <Col sm={6}>
+                  {service.links.map((link, index) => (
+                    <Col sm={6} key={index}>
                       <Button
                         variant='link'
                         className='text-muted text-decoration-none p-0 border-0'

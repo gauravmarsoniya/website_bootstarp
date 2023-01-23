@@ -55,8 +55,8 @@ const Testimonial = () => {
                   disableOnInteraction: false,
                 }}
               >
-                {[1, 2, 3].map((item) => (
-                  <SwiperSlide>
+                {[1, 2, 3].map((item, index) => (
+                  <SwiperSlide key={index}>
                     <Card className={'w-75 align-items-center p-4'}>
                       <Card.Img
                         className={'w-25 mb-3'}
@@ -70,7 +70,7 @@ const Testimonial = () => {
                             distinct visual impression. "
                           </p>
                           <div>
-                            <small class='text-uppercase fw-semibold d-block'>
+                            <small className='text-uppercase fw-semibold d-block'>
                               Shelly Goodman
                             </small>
                             <small className='text-muted'>Manager</small>

@@ -1,11 +1,11 @@
 import './index.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './core/Header';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Resources from './pages/Resources';
 import Technologies from './pages/Technologies';
-import Footer from './components/Footer';
+import Footer from './core/Footer';
 /* Rename classname with company name once final */
 const UI = () => {
   return (
