@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ListGroup from 'react-bootstrap/ListGroup';
 import cn from 'classnames';
-import menus from 'client/data/menu/index.js';
+import menus from '@client/data/menu/index';
 //import styles from './index.module.scss';
 import './index.scss';
 const TopNav = () => {

@@ -1,52 +1,24 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import cn from 'classnames';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import required modules
 import { Autoplay } from 'swiper';
-
-import {
-  FaMagento,
-  FaWordpress,
-  FaShopify,
-  FaDrupal,
-  FaReact,
-  FaAngular,
-  FaVuejs,
-  FaHtml5,
-  FaPhp,
-  FaPython,
-  FaNodeJs,
-} from 'react-icons/fa';
-
-import {
-  SiFlutter,
-  SiIonic,
-  SiMongodb,
-  SiMysql,
-  SiPostgresql,
-  SiFirebase,
-} from 'react-icons/si';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import styles from './index.module.scss';
+import homeData from '@client/data/pages/home/index';
+
 const Technologies = () => {
   return (
-    <div className={cn(styles.technologies, 'text-bg-light py-5')}>
+    <div className={'text-bg-light py-5'}>
       <Container>
         <Row className={'justify-content-center'}>
           <Col md={9} lg={8}>
             <div className={'text-center mb-5'}>
-              <h2>Technologies We Work</h2>
-              <p className='lead'>
-                Authoritatively reinvent client-centric e-markets via fully
-                tested process improvements. Objectively restore strategic
-                initiatives through fully researched.
-              </p>
+              <h2>{homeData.technologies.title}</h2>
+              <p className='lead'>{homeData.technologies.description}</p>
             </div>
           </Col>
         </Row>
@@ -54,89 +26,12 @@ const Technologies = () => {
           <Col>
             <Container>
               <Swiper
-                slidesPerView={1}
-                spaceBetween={10}
-                pagination={{
-                  clickable: true,
-                }}
-                breakpoints={{
-                  '@0.00': {
-                    slidesPerView: 4,
-                    spaceBetween: 10,
-                  },
-                  '@0.75': {
-                    slidesPerView: 8,
-                    spaceBetween: 10,
-                  },
-                  '@1.00': {
-                    slidesPerView: 12,
-                    spaceBetween: 10,
-                  },
-                  '@1.50': {
-                    slidesPerView: 16,
-                    spaceBetween: 10,
-                  },
-                }}
                 modules={[Autoplay]}
-                loop={true}
-                autoplay={{
-                  delay: 500,
-                  disableOnInteraction: false,
-                }}
+                {...homeData.technologies.pluginProps}
               >
-                <SwiperSlide>
-                  <FaMagento size={48} color={'#f46f25'} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaWordpress size={48} color='#00749C' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaShopify size={48} color={'#96bf48'} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaDrupal size={48} color={'#25AAE1'} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaReact size={48} color='#61DBFB' />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <FaAngular size={48} color='#dd1b16' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaVuejs size={48} color='#42b883' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaHtml5 size={48} color='#e34c26' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaPhp size={48} color='#8993be' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaPython size={48} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FaNodeJs size={48} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SiFlutter size={48} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SiIonic size={48} color='#498AFF' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SiMongodb size={48} color='#3FA037' />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <SiMysql size={48} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SiPostgresql size={48} color='#336791' />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SiFirebase size={48} />
-                </SwiperSlide>
+                {homeData.technologies.items.map((item, index) => (
+                  <SwiperSlide key={index}>{item}</SwiperSlide>
+                ))}
               </Swiper>
             </Container>
           </Col>

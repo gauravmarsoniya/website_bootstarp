@@ -18,13 +18,14 @@
     "swiper": "^8.4.6"
   },
   "devDependencies": {
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "@craco/craco": "^7.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "carco build",
+    "test": "carco test",
+    "eject": "carco eject"
   },
   "eslintConfig": {
     "extends": [
