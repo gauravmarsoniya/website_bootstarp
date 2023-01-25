@@ -1,10 +1,10 @@
 import Topbar from './Topbar';
 import TopNav from './Navbar';
-const Header = () => {
+const Header = ({ menus }) => {
   return (
     <>
       <Topbar />
-      <TopNav />
+      <TopNav menus={menus} />
     </>
   );
 };

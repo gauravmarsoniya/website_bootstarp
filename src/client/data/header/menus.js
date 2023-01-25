@@ -1,82 +1,82 @@
 export default [
   {
-    key: 'HOME',
+    key: 'home',
     submenu: null,
   },
   {
-    key: 'SERVICE',
+    key: 'services',
     submenus: [
       {
-        key: 'ECOMMERCE',
+        key: 'ecommerce',
         submenus: [
           {
-            key: 'MAGENTO',
+            key: 'magento',
             url: 'services/megento',
           },
           {
-            key: 'WOOCOMMERCE',
+            key: 'woocommerce',
             url: '/services/woocommerce',
           },
           {
-            key: 'SHOPIFY',
+            key: 'shopify',
             url: '/services/shopify',
           },
           {
-            key: 'WORDPRESS',
+            key: 'wordpress',
             url: '/services/wordpress',
           },
           {
-            key: 'DRUPAL',
+            key: 'drupal',
             url: '/services/drupal',
           },
         ],
       },
       {
-        key: 'WEBDEVLOPMENT',
+        key: 'webdevlopment',
         submenus: [
           {
-            key: 'REACT',
+            key: 'react',
           },
           {
-            key: 'ANGULAR',
+            key: 'angular',
           },
           {
-            key: 'VUEJS',
+            key: 'vuejs',
           },
           {
-            key: 'NODEJS',
+            key: 'nodejs',
           },
         ],
       },
       {
-        key: 'MOBILEDEVELOPMENT',
+        key: 'mobiledevelopment',
         submenus: [
           {
-            key: 'IOS',
+            key: 'ios',
           },
           {
-            key: 'ANDROID',
+            key: 'android',
           },
           {
-            key: 'REACTNATIVE',
+            key: 'reactnative',
           },
           {
-            key: 'PWA',
+            key: 'pwa',
           },
         ],
       },
     ],
   },
   {
-    key: 'BLOG',
+    key: 'blog',
     submenu: null,
   },
   {
-    key: 'ABOUTUS',
+    key: 'aboutus',
     submenu: null,
   },
   {
-    key: 'GETSTARTED',
+    key: 'getstarted',
     type: 'button',
     variant: 'primary',
   },

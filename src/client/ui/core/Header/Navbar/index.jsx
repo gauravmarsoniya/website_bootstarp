@@ -7,11 +7,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
-import menus from '@client/data/menu/index';
-//import styles from './index.module.scss';
 import './index.scss';
-const TopNav = () => {
-  console.log('########', menus);
+
+const TopNav = (props) => {
+  const menus = props.menus || [];
   return (
     <Navbar
       collapseOnSelect
@@ -62,9 +61,7 @@ const TopNav = () => {
                     {menu.type === 'button' ? (
                       <Button variant='primary'>Get Started</Button>
                     ) : (
-                      <Nav.Link href='/solutions/development'>
-                        {menu.key}
-                      </Nav.Link>
+                      <Nav.Link href='/'>{menu.key}</Nav.Link>
                     )}
                   </Nav.Item>
                 );
