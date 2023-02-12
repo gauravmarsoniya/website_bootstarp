@@ -1,0 +1,179 @@
+.techSystem {
+  position: relative;
+  // width: 780px;
+  height: 80vh;
+  margin: auto;
+  overflow: hidden;
+
+  .star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4vw; //80px;
+    width: 4vw; //80px;
+    margin-top: -2vw; //-40px;
+    margin-left: -2vw; //-40px;
+    border-radius: 50%;
+  }
+
+  @mixin spin($wh, $margin) {
+    width: $wh;
+    height: $wh;
+    margin-left: $margin;
+    margin-top: $margin;
+  }
+  @mixin spinSpeed($speed) {
+    animation: spin-right $speed linear infinite;
+  }
+
+  @mixin orbit($wh, $margin) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgb(155, 153, 153);
+    border-radius: 50%;
+    @include spin($wh, $margin);
+  }
+
+  /* ***** Start Orbit styles ******* */
+  .orbitDatabase {
+    @include orbit(10vw, -5vw);
+    & + div {
+      @include spin(10vw, -5vw);
+      @include spinSpeed(8.8s);
+    }
+  }
+
+  .orbitApi {
+    @include orbit(18vw, -9vw);
+    & + div {
+      @include spin(18vw, -9vw);
+      @include spinSpeed(22s);
+    }
+  }
+
+  .orbitFrontend {
+    @include orbit(26vw, -13vw);
+    & + div {
+      @include spin(26vw, -13vw);
+      @include spinSpeed(36.5s);
+    }
+  }
+
+  .orbitDesign {
+    @include orbit(34vw, -17vw);
+    & + div {
+      @include spin(34vw, -17vw);
+      @include spinSpeed(68.7s);
+    }
+  }
+
+  /* ***** End Orbit styles ******* */
+
+  .planets {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    @mixin planet($width: 4vw, $height: 4vw) {
+      position: absolute;
+      border-radius: 50%;
+      height: $height;
+      width: $width;
+      //background-color: rgb(243, 243, 243);
+      padding: 10px;
+      animation: spin-left 22s linear infinite;
+      border-width: 1px;
+      border-color: black;
+    }
+
+    @mixin planetTopLeft($top, $left, $marginTop, $marginLeft) {
+      top: $top;
+      left: $left;
+      margin-top: $marginTop;
+      margin-left: $marginLeft;
+    }
+
+    @mixin planetButtomLeft($bottom, $left, $marginBottom, $marginLeft) {
+      bottom: $bottom;
+      left: $left;
+      margin-bottom: $marginBottom;
+      margin-left: $marginLeft;
+    }
+
+    .mongoDB {
+      @include planet();
+      @include planetTopLeft(0, 50%, -2vw, -2vw);
+    }
+    .postgreSQL {
+      @include planet();
+      @include planetButtomLeft(0, 50%, -2vw, -2vw);
+    }
+    .mySQL {
+      @include planet();
+      top: 50%;
+      left: 0;
+      margin-left: -2vw;
+      margin-bottom: -2vw;
+    }
+    .python {
+      @include planet();
+      @include planetTopLeft(0, 50%, -2vw, -2vw);
+    }
+    .php {
+      @include planet();
+      @include planetButtomLeft(0, 50%, -2vw, -2vw);
+    }
+
+    .earth {
+      @include planet();
+      @include planetTopLeft(0, 50%, -2vw, -2vw);
+    }
+
+    .react {
+      @include planet();
+      @include planetTopLeft(0, 50%, -2vw, -2vw);
+    }
+    .angular {
+      @include planet();
+      top: 50%;
+      right: 0;
+      margin-right: -2vw;
+      margin-bottom: -2vw;
+    }
+    .vue {
+      @include planet();
+      @include planetButtomLeft(0, 50%, -2vw, -2vw);
+    }
+    .magento {
+      @include planet();
+      top: 50%;
+      left: 0;
+      margin-left: -2vw;
+      margin-bottom: -2vw;
+    }
+
+    .figma {
+      @include planet();
+      @include planetTopLeft(0, 50%, -2vw, -2vw);
+    }
+  }
+
+  /* Individual objects rules. They are pretty much the same for 
+all objects and basically only vary in orbit size 
+and planet size. And colors :) */
+
+  /* Spinning animations */
+
+  @keyframes spin-right {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-left {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+}

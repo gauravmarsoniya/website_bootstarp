@@ -1,0 +1,24 @@
+.cardCustom {
+  .card {
+    background: transparent;
+    .icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      background-color: rgb(241, 230, 255);
+    }
+  }
+
+  .flat {
+    border: 0;
+  }
+
+  .hover {
+    &:hover {
+      box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    }
+  }
+}

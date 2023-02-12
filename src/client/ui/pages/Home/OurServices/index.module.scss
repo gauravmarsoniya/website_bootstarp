@@ -10,8 +10,13 @@
     height: 100%;
     display: block;
     position: relative;
-    img {
-      max-width: 100%;
+
+    :first-child {
+      z-index: -1;
+      position: absolute;
+      left: -10%;
+      top: -10%;
+      width: 80%;
     }
   }
 }

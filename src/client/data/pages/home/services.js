@@ -1,14 +1,13 @@
-import ecomDevImage from '@client/assets/ecom-dev.png';
-import webDevImage from '@client/assets/web-dev.png';
-import appDevImage from '@client/assets/app-dev.png';
+import ecomDevImage from '@client/assets/magento-developer.png';
 
 export default {
-  title: 'Our Expertise In',
+  title: 'Our Robust Suite Of IT Consulting Services',
   description:
     'We provide full-tech solutions to retain the attention of the target audience and leave a long-term impression on the business.',
   items: [
     {
       key: 'ECOMMERCE',
+      title: 'E-Commerce and CMS Solutions',
       image: ecomDevImage,
       description:
         'Our tailor-made enterprise e-commerce solutions comprise a range of products and IT services that gives a dynamic boost to your business.',
@@ -22,7 +21,8 @@ export default {
     },
     {
       key: 'WEBDEVLOPMENT',
-      image: webDevImage,
+      title: 'Web Development',
+      image: ecomDevImage,
       description:
         'Our certified web developers work across the latest technologies to develop scalable websites and web applications for your business growth.',
       links: [
@@ -35,7 +35,8 @@ export default {
     },
     {
       key: 'MOBILEDEVELOPMENT',
-      image: appDevImage,
+      title: 'Mobile App Development',
+      image: ecomDevImage,
       description:
         'As the best mobile app development company, we are experts in developing native and cross-platform mobile apps suitable for all business verticals.',
       links: [
@@ -43,6 +44,19 @@ export default {
         { key: 'ANDROID' },
         { key: 'REACTNATIVE' },
         { key: 'PWA' },
+      ],
+    },
+    {
+      key: 'UIUX',
+      title: 'UI & UX and Graphic Design',
+      image: ecomDevImage,
+      description:
+        'As the best mobile app development company, we are experts in developing native and cross-platform mobile apps suitable for all business verticals.',
+      links: [
+        { key: '[Some text]' },
+        { key: '[Some text]' },
+        { key: '[Some text]' },
+        { key: '[Some text]' },
       ],
     },
   ],
