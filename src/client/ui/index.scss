@@ -3,10 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 @import './sass/custom.scss';
+
+@import './sass/dark.scss';
+
 @import '~bootstrap/scss/bootstrap.scss';
 
 body {
   //font-family: 'Quicksand', sans-serif;
   font-family: 'Poppins', sans-serif;
   //font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-image: url('../assets/w1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
 }

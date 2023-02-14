@@ -1,0 +1,14 @@
+.topbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  svg,
+  a {
+    &:hover {
+      color: black//var(--bs-primary);
+    }
+  }
+
+  a {
+    color: #6c757d;
+    text-decoration: none;
+  }
+}

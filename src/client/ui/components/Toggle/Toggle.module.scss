@@ -1,0 +1,97 @@
+.toggle {
+  position: relative;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+  }
+  input {
+    &:checked + span {
+      span.track {
+        .trackInner {
+          background: hsl(240, 33%, 6%);
+        }
+        .trackKnob {
+          margin-left: 22px;
+          transform: rotate(360deg);
+          background: hsl(268, 98%, 50%);
+          border-color: hsl(268, 98%, 50%);
+          box-shadow: 0 14px 26px -12px hsl(268, 98%, 50%),
+            0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px hsl(268, 98%, 50%) !important;
+        }
+        .trackKnob {
+          i {
+            opacity: 1;
+          }
+          svg.inactive {
+            display: none;
+            stroke-width: hsl(226, 34%, 24%);
+          }
+          svg.active {
+            display: block;
+            stroke: #fcfcfc;
+            color: #fcfcfc;
+          }
+        }
+      }
+    }
+  }
+  span {
+    display: block;
+    cursor: pointer;
+  }
+  span {
+    span {
+      display: block;
+    }
+    span.track {
+      position: relative;
+    }
+    span.track {
+      .trackInner {
+        height: 11px;
+        width: 42px;
+        background: #ededed;
+        border-radius: 100px;
+      }
+      .trackKnob {
+        position: absolute;
+        top: -8px;
+        left: -2px;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        border: 1px solid #e5e5e5;
+        box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(0);
+        transition: all 0.3s;
+      }
+      .trackKnob {
+        i {
+          color: #fff;
+          opacity: 0;
+          transition: all 0.3s;
+        }
+        svg {
+          height: 14px;
+          width: 14px;
+          stroke-width: 2px;
+          stroke: hsl(226, 34%, 24%);
+        }
+        svg.inactive {
+          display: block;
+          color: hsl(226, 34%, 24%);
+        }
+        svg.active {
+          display: none;
+        }
+      }
+    }
+  }
+}
