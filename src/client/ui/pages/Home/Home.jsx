@@ -33,7 +33,7 @@ const Home = () => {
               <Typography.Title size={5} standOut={true}>
                 Ready to explore technologies universe with us ?
               </Typography.Title>
-              <Typography.Paragraph>
+              <Typography.Paragraph standOut={true}>
                 Engage [company technologies] to build a remote, Agile software
                 development team to co-create or update your digital product
                 with the latest web, mobile and cloud technologies.
@@ -45,7 +45,7 @@ const Home = () => {
           </Row>
         </Container>
       </Section>
-      <Section marginBottom={5}>
+      <Section id='services' marginBottom={5}>
         <Container className={cn(styles.ourServices, 'py-5')}>
           <Row className={'justify-content-center mb-5'}>
             <Col className={'text-center'}>
@@ -57,7 +57,7 @@ const Home = () => {
             <ContentBlock
               key={index}
               title={item.title}
-              paragraph={item.description}
+              paragraphs={item.paragraphs}
               image={item.image}
               links={item.links}
               rowReverse={index % 2 !== 0}
@@ -70,73 +70,52 @@ const Home = () => {
           <Row>
             {homeData.features.items.map((item, index) => (
               <Col>
-                <Card icon={item.icon} title={item.title} text={item.text} />
+                <Card
+                  key={index}
+                  icon={item.icon}
+                  title={item.title}
+                  text={item.text}
+                  transparent={true}
+                  flat={true}
+                />
               </Col>
             ))}
           </Row>
         </Container>
       </Section>
 
-      <div>
-        <Container className='py-5'>
-          <Row className='justify-content-between gap-5'>
-            <Col sm={12} md={5} lg={5}>
-              <div>
-                <Image src={tempImage} fluid />
-              </div>
-            </Col>
-            <Col sm={12} md={6} lg={6}>
-              <h3>{'Who We Are'}</h3>
-              <p>
-                Being one of the best IT consulting companies in the US market,
-                we have delivered IT solutions at a global level by leveraging
-                the full potential of the latest disruptive technologies.
-              </p>
-              <p>
-                We are purists in cognitive computing, hyper-automation, and
-                analytics to help enterprises reimagine their businesses for the
-                digital age. Our technical prowess accelerates your enterprise
-                cloud journey and our AI-powered core makes us your change
-                agent. We evolve with the power of our innovation ecosystem to
-                deliver exceptional customer service.{' '}
-              </p>
-              <p>
-                Our agile hiring models and relentless focus on customer delight
-                have garnered the trust as the best software development company
-                to outsource offshore IT Consulting services.
-              </p>
-            </Col>
-          </Row>
+      <Section marginBottom={5}>
+        <Container>
+          <ContentBlock
+            image={tempImage}
+            title={'Who We Are'}
+            paragraphs={[
+              'Being one of the best IT consulting companies in the US market,we have delivered IT solutions at a global level by leveraging the full potential of the latest disruptive technologies.',
+              'We are purists in cognitive computing, hyper-automation, and analytics to help enterprises reimagine their businesses for the digital age. Our technical prowess accelerates your enterprise cloud journey and our AI-powered core makes us your change agent. We evolve with the power of our innovation ecosystem to deliver exceptional customer service.',
+              'Our agile hiring models and relentless focus on customer delight have garnered the trust as the best software development company to outsource offshore IT Consulting services.',
+            ]}
+          />
         </Container>
-      </div>
+      </Section>
 
       <CallToAction />
-      <div>
-        <Container className='py-5'>
-          <Row className='justify-content-between gap-5'>
-            <Col sm={12} md={6} lg={6}>
-              <h2>
-                Do you Want to Hire Dedicated Developers for Your Project?
-              </h2>
-              <p>
-                Hiring dedicated resources which would help you to take business
-                growth on higher levels along with reducing overhead costs such
-                as, recruitment cost, promotion, training expenditure;
-                infrastructure cost etc. is a tough and important task.
-              </p>
-              <Button variant='outline-secondary me-4'>Learn more</Button>
-              <Button variant='primary'>Get A Quote</Button>
-            </Col>
-            <Col sm={12} md={5} lg={5}>
-              <div>
-                <Image src={tempImage} fluid />
-              </div>
-            </Col>
-          </Row>
+      <Section marginBottom={5}>
+        <Container>
+          <ContentBlock
+            rowReverse={true}
+            image={tempImage}
+            title={'Do you Want to Hire Dedicated Developers for Your Project?'}
+            paragraphs={[
+              'Hiring dedicated resources which would help you to take business growth on higher levels along with reducing overhead costs such as, recruitment cost, promotion, training expenditure;infrastructure cost etc. is a tough and important task.',
+            ]}
+            buttons={[
+              { variant: 'outline-secondary', text: 'Learn more' },
+              { variant: 'primary', text: 'Get A Quote' },
+            ]}
+          />
         </Container>
-      </div>
+      </Section>
       <Testimonial />
-      <main></main>
     </div>
   );
 };

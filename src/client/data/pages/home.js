@@ -26,7 +26,7 @@ import {
 } from 'react-icons/si';
 
 import ecomDevImage from '@client/assets/magento-developer.png';
-
+import magento2 from '../../assets/Magento2.webp';
 export default {
   services: {
     title: 'Our Robust Suite Of IT Consulting Services',
@@ -36,9 +36,10 @@ export default {
       {
         key: 'ECOMMERCE',
         title: 'E-Commerce and CMS Solutions',
-        image: ecomDevImage,
-        description:
+        image: magento2,
+        paragraphs: [
           'Our tailor-made enterprise e-commerce solutions comprise a range of products and IT services that gives a dynamic boost to your business.',
+        ],
         links: [
           { key: 'MAGENTO' },
           { key: 'WOOCOMMERCE' },
@@ -51,8 +52,9 @@ export default {
         key: 'WEBDEVLOPMENT',
         title: 'Web Development',
         image: ecomDevImage,
-        description:
+        paragraphs: [
           'Our certified web developers work across the latest technologies to develop scalable websites and web applications for your business growth.',
+        ],
         links: [
           { key: 'REACT' },
           { key: 'ANGULAR' },
@@ -65,8 +67,9 @@ export default {
         key: 'MOBILEDEVELOPMENT',
         title: 'Mobile App Development',
         image: ecomDevImage,
-        description:
+        paragraphs: [
           'As the best mobile app development company, we are experts in developing native and cross-platform mobile apps suitable for all business verticals.',
+        ],
         links: [
           { key: 'IOS' },
           { key: 'ANDROID' },
@@ -78,8 +81,9 @@ export default {
         key: 'UIUX',
         title: 'UI & UX and Graphic Design',
         image: ecomDevImage,
-        description:
+        paragraphs: [
           'As the best mobile app development company, we are experts in developing native and cross-platform mobile apps suitable for all business verticals.',
+        ],
         links: [
           { key: '[Some text]' },
           { key: '[Some text]' },

@@ -3,26 +3,28 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-
+import Typography from '@client/ui/components/Typography';
+import Section from '@client/ui/components/Section';
 import styles from './CallToAction.module.scss';
-const CallToAction = () => {
+const CallToAction = ({ title, description }) => {
   return (
-    <section className={cn(styles.CallToAction, 'bg-primary')}>
+    <Section className={cn('bg-primary')} marginBottom={5}>
       <Container className='py-5'>
         <Row className='justify-content-between align-items-center'>
           <Col md={8}>
-            <h2 className='text-white'>Need Some Help?</h2>
-            <p className='lead text-white'>
-              Whether you’re stuck or just want some tips on where to start, hit
-              up our experts anytime.
-            </p>
+            <Typography.Title size={2} className='text-white'>
+              {title}
+            </Typography.Title>
+            <Typography.Paragraph standOut={true} className='text-white'>
+              {description}
+            </Typography.Paragraph>
           </Col>
-          <Col md={4}>
+          <Col md={4} className='text-end'>
             <Button variant='outline-light'>Chat with us</Button>
           </Col>
         </Row>
       </Container>
-    </section>
+    </Section>
   );
 };
 

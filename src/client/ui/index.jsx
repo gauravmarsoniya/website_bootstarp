@@ -5,9 +5,8 @@ import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
 import Documents from './pages/Documents';
 import Home from './pages/Home';
-//import Services from './pages/Services';
 //import Resources from './pages/Resources';
-//import Technologies from './pages/Technologies';
+import Technologies from './pages/Technologies';
 import Footer from './core/Footer';
 
 import headerData from '@client/data/header/index';
@@ -19,21 +18,30 @@ const UI = () => {
     <>
       <Topbar />
       <Navbar />
-
-      <Router>
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <>
-                <Home />
-                <Footer />
-              </>
-            }
-          />
-          <Route path='/documents' element={<Documents />} />
-        </Routes>
-      </Router>
+      <main className='mt-4'>
+        <Router>
+          <Routes>
+            <Route
+              path='/'
+              element={
+                <>
+                  <Home />
+                </>
+              }
+            />
+            <Route
+              path='/technologies'
+              element={
+                <>
+                  <Technologies />
+                </>
+              }
+            />
+            <Route path='/documents' element={<Documents />} />
+          </Routes>
+        </Router>
+      </main>
+      <Footer />
     </>
   );
 };

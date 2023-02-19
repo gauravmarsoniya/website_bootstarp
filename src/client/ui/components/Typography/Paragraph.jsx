@@ -1,8 +1,10 @@
 import cn from 'classnames';
-const Paragraph = ({ className, children, marginBottom, standOut }) => {
+const Paragraph = ({ className, children, marginBottom, standOut, muted }) => {
   return (
     <p
-      className={cn(className, 'text-muted', `mb-${marginBottom}`, {
+      className={cn(className, {
+        muted: 'text-muted',
+        [`mb-${marginBottom}`]: marginBottom,
         lead: standOut,
       })}
     >

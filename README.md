@@ -26,23 +26,6 @@ https://html.creativegigstf.com/sinco/?storefront=envato-elements - service deta
 
 https://shreethemes.in/techwind/layouts/index-it-solution.html
 
-## Live Website
-
-https://www.horizoncore.com/hire-dedicated-developer-india/
-https://www.horizoncore.com/magento-development-customization/
-
-https://theninehertz.com/
-
-https://www.elsner.com/
-
-https://www.mobikasa.com/
-
-https://magnetoitsolutions.com/
-
-https://foreignerds.com/
-
-https://www.webiletechnologies.com/ **\*\***
-
 ---
 
 Our Services -> We run all kind of service in form of technologies
@@ -110,6 +93,23 @@ Mega Menu example : https://bootstrap-menu.com/demos/megamenu.html#
 10. https://swoo.ca/en
 11. https://netsells.co.uk/
 12. https://redberry.international/
+
+## Live Website
+
+https://www.horizoncore.com/hire-dedicated-developer-india/
+https://www.horizoncore.com/magento-development-customization/
+
+https://theninehertz.com/
+
+https://www.elsner.com/
+
+https://www.mobikasa.com/
+
+https://magnetoitsolutions.com/
+
+https://foreignerds.com/
+
+https://www.webiletechnologies.com/ **\*\***
 
 Wave Effect : https://codepen.io/plavookac/pen/QMwObb
 https://codepen.io/gugukaka/pen/qBarwKB

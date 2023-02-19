@@ -4,7 +4,8 @@ const Title = ({ className, children, size, marginBottom, standOut }) => {
 
   return (
     <Component
-      className={cn(className, `mb-${marginBottom}`, {
+      className={cn(className, {
+        [`mb-${marginBottom}`]: marginBottom,
         [`display-${size}`]: standOut,
       })}
     >

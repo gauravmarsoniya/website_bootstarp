@@ -5,8 +5,15 @@ import Image from 'react-bootstrap/Image';
 import Typography from '@client/ui/components/Typography';
 import { FaArrowRight } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
-const ContentBlock = ({ title, paragraph, image, links, rowReverse }) => {
-  console.log('XXXXXXX', rowReverse);
+const ContentBlock = ({
+  title,
+  titleSize,
+  paragraphs,
+  image,
+  links,
+  buttons,
+  rowReverse,
+}) => {
   return (
     <Row
       className={cn('justify-content-between', {
@@ -19,15 +26,20 @@ const ContentBlock = ({ title, paragraph, image, links, rowReverse }) => {
         </Col>
       )}
       <Col md={12} lg={6} className={cn('my-auto')}>
-        {title && <Typography.Title size={3}>{title}</Typography.Title>}
-        {paragraph && <Typography.Paragraph>{paragraph}</Typography.Paragraph>}
+        {title && (
+          <Typography.Title size={titleSize || 3}>{title}</Typography.Title>
+        )}
+        {paragraphs &&
+          paragraphs.map((paragraph, index) => (
+            <Typography.Paragraph key={index}>{paragraph}</Typography.Paragraph>
+          ))}
         {links && (
           <Row className={'gy-3'}>
             {links.map((link) => (
               <Col sm={6} key={link.key}>
                 <Button
                   variant='link'
-                  className='text-decoration-none p-0 border-0'
+                  className='text-decoration-none p-0 border-0 text-muted'
                 >
                   <FaArrowRight className={'me-2'} />
                   {link.key}
@@ -36,6 +48,10 @@ const ContentBlock = ({ title, paragraph, image, links, rowReverse }) => {
             ))}
           </Row>
         )}
+        {buttons &&
+          buttons.map((button) => (
+            <Button variant={button.variant}>{button.text}</Button>
+          ))}
       </Col>
     </Row>
   );

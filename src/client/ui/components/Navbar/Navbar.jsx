@@ -59,7 +59,7 @@ const HeaderNavbar = (props) => {
             <Nav>
               <Nav.Item></Nav.Item>
               <Nav.Item>
-                <Toggle className={'px-2 py-3'} />
+                <Toggle className={'px-3 py-3'} />
               </Nav.Item>
               <Nav.Item>
                 <Button variant='primary'>Get A Quote</Button>
@@ -70,7 +70,7 @@ const HeaderNavbar = (props) => {
                 <Nav.Link href='/'>{'Home'}</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href='/'>{'Services'}</Nav.Link>
+                <Nav.Link href='#services'>{'Services'}</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link href='/'>{'Technologies'}</Nav.Link>
